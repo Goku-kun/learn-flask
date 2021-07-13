@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages {{id}}</title>
+</head>
+
+<body>
+    <h1>This is page {{id}}</h1>
+    <h2>It has value: {{another_value}}</h2>
+    <h3>This is another default filter for variable {{unknown_variable | default("This is the default value.")}}</h3>
+    {% if value == 3 %}
+    <p>This is true and hence will be printed.</p>
+    {% else %}
+    <p>THis is printed and hence false. Yoi</p>
+    {% endif %}
+    {% for value in array %}
+    <p>The value is {{value}}</p>
+    {% endfor %}
+</body>
+
+</html>
