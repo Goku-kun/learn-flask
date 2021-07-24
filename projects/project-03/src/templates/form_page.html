@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>This is the form page</h1>
+<ul>
+  <li>{{req.name}}</li>
+  <li>{{req.password}}</li>
+  {% for key, value in req.items() %}
+  <li>{{key}} -- {{value}} is the key -- value pair</li>
+  <!-- <li>{{value}} is the value</li> -->
+  {% endfor %}
+</ul>
+{% endblock %}
